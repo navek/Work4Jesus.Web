@@ -1,0 +1,1 @@
+This project is a webservice that sends responses in json format.
