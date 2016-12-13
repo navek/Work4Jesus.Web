@@ -10,8 +10,9 @@ namespace Work4Jesus.Ioc.Modules
     {
         public override void Load()
         {
+            //Register in json the repository for now
             var data = Path.Combine(HttpRuntime.AppDomainAppPath, "App_Data");
-
+            
             Bind<IUserRepository>()
                 .To<UserRepository>()
                 .WithConstructorArgument(Path.Combine(data, "user_repository.json"));
