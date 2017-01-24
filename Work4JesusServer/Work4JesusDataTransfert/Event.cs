@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Work4JesusDataTransfert
 {
-   public class Event
+    public class Event
     {
+        public int Id { get; set; }
+
         /// <summary>
-        /// title of the event
+        ///     title of the event
         /// </summary>
         public string Title { get; set; }
+
         public DateTime CreatedOn { get; set; }
         public DateTime ModifiedOn { get; set; }
 
@@ -19,6 +18,7 @@ namespace Work4JesusDataTransfert
         public DateTime EndOfEvent { get; set; }
 
         public string Adress { get; set; }
+        public GpsPosition Gps { get; set; }
 
         /// <summary>
         ///     In order to add complementary indication of the adress
@@ -33,6 +33,5 @@ namespace Work4JesusDataTransfert
         public string YoutubeLink { get; set; }
 
         public string KeyWord { get; set; }
-
     }
 }
